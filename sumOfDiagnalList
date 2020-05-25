@@ -17,7 +17,7 @@ def sumofdiagonalArry(arr):
     print('Sum of left diagonal list is', leftdiagonal)
 
     if len(arr) >= n:
-        for r, c in zip(range(n), range(2, -1, -1)):
+        for r, c in zip(range(n), range(n-1, -1, -1)):
             rightdiagonal = rightdiagonal + arr[r][c]
             r += 1
             c -= 1
